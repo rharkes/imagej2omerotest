@@ -45,7 +45,7 @@ import java.util.List;
  * and replace the {@link run} method implementation with your own logic.
  * </p>
  */
-@Plugin(type = Command.class, menuPath = "Plugins>OmeroTest")
+@Plugin(type = Command.class, menuPath = "Plugins>Test>Imagej2OmeroTest")
 public class OmeroTests<T extends RealType<T>> implements Command {
     //
     // Feel free to add more parameters here...

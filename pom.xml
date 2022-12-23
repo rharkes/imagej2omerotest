@@ -12,9 +12,9 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.mycompany</groupId>        <!-- FIXME: Your organization groupId here -->
-	<artifactId>GaussFiltering</artifactId> <!-- FIXME: Your project artifactId here   -->
-	<version>0.1.0-SNAPSHOT</version>
+	<groupId>LeidenUniv.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
+	<artifactId>Imagej2omerotest</artifactId> <!-- FIXME: Your project artifactId here   -->
+	<version>0.0.1</version>
 
 	<name>Gauss Filtering</name>                                               <!-- FIXME: Your project name here          -->
 	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
