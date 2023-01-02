@@ -15,14 +15,13 @@
 	<groupId>LeidenUniv.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
 	<artifactId>Imagej2omerotest</artifactId> <!-- FIXME: Your project artifactId here   -->
 	<version>0.0.1</version>
-
-	<name>Gauss Filtering</name>                                               <!-- FIXME: Your project name here          -->
+	<name>Omero Imagej2 Test</name>                                               <!-- FIXME: Your project name here          -->
 	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
-	<url>https://mycompany.com/imagej/gauss-filtering/</url>                   <!-- FIXME: Your project website here       -->
-	<inceptionYear>2017</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
+	<url>https://github.com/Karivtan/imagej2omerotest</url>                   <!-- FIXME: Your project website here       -->
+	<inceptionYear>2020</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>My Company</name>           <!-- FIXME: Your organization name here    -->
-		<url>https://mycompany.com/</url> <!-- FIXME: Your organization website here -->
+		<name>Leiden University</name>           <!-- FIXME: Your organization name here    -->
+		<url>https://www.universiteitleiden.nl/</url> <!-- FIXME: Your organization website here -->
 	</organization>
 	<licenses>
 		<license>                         <!-- FIXME: Your license here -->
