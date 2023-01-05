@@ -95,5 +95,42 @@
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
 		</dependency>
+		
+		<dependency>
+    		<groupId>ome</groupId>
+    		<artifactId>bioformats_package</artifactId>
+    		<version>6.5.1</version> 
+		</dependency>
+		
+		<dependency>
+    		<groupId>sc.fiji</groupId>
+    		<artifactId>fiji-lib</artifactId>
+		</dependency>
+
+		<dependency>
+    		<groupId>ome</groupId>
+    		<artifactId>scifio</artifactId>
+    		<version>5.0.0-rc2</version>
+		</dependency>
+	
+		<dependency>
+  			<groupId>io.scif</groupId>
+  			<artifactId>scifio</artifactId>
+		</dependency>
+		
+  		<dependency>
+  			<groupId>io.scif</groupId>
+  			<artifactId>scifio-bf-compat</artifactId>
+		</dependency>
+
+		<dependency>
+  			<groupId>ome</groupId>
+  			<artifactId>formats-bsd</artifactId>
+		</dependency>
+
+		<dependency>
+  			<groupId>ome</groupId>
+  			<artifactId>formats-gpl</artifactId>
+		</dependency>
 	</dependencies>
 </project>
