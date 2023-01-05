@@ -82,6 +82,7 @@ public class OmeroTests<T extends RealType<T>> implements Command {
     			IJ.log("Finished image "+counter+" of "+images.size());
     		}
     	}
+    	godaad.closeConnection(); // needed to close omero connection
     }
 
     /**
