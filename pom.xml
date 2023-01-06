@@ -15,7 +15,7 @@
 	<groupId>LeidenUniv.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
 	<artifactId>Imagej2omerotest</artifactId> <!-- FIXME: Your project artifactId here   -->
 	<version>0.0.1</version>
-	<name>Omero Imagej2 Test</name>                                               <!-- FIXME: Your project name here          -->
+	<name>Imagej2 OMerotest</name>  
 	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
 	<url>https://github.com/Karivtan/imagej2omerotest</url>                   <!-- FIXME: Your project website here       -->
 	<inceptionYear>2020</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
@@ -93,6 +93,43 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
+		</dependency>
+		
+		<dependency>
+    		<groupId>ome</groupId>
+    		<artifactId>bioformats_package</artifactId>
+    		<version>6.5.1</version> 
+		</dependency>
+		
+		<dependency>
+    		<groupId>sc.fiji</groupId>
+    		<artifactId>fiji-lib</artifactId>
+		</dependency>
+
+		<dependency>
+    		<groupId>ome</groupId>
+    		<artifactId>scifio</artifactId>
+    		<version>5.0.0-rc2</version>
+		</dependency>
+	
+		<dependency>
+  			<groupId>io.scif</groupId>
+  			<artifactId>scifio</artifactId>
+		</dependency>
+		
+  		<dependency>
+  			<groupId>io.scif</groupId>
+  			<artifactId>scifio-bf-compat</artifactId>
+		</dependency>
+
+		<dependency>
+  			<groupId>ome</groupId>
+  			<artifactId>formats-bsd</artifactId>
+		</dependency>
+
+		<dependency>
+  			<groupId>ome</groupId>
+  			<artifactId>formats-gpl</artifactId>
 		</dependency>
 	</dependencies>
 </project>
