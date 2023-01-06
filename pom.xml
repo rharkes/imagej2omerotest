@@ -34,9 +34,9 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>octocat</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Noma Onomatopoeia</name>                            <!-- FIXME: Your name here          -->
-			<url>https://mycompany.com/people/noma-onomatopoeia</url> <!-- FIXME: Your website here       -->
+			<id>karivtan</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Joost Willemse</name>                            <!-- FIXME: Your name here          -->
+			<url>https://github.com/Karivtan/imagej2omerotest</url> <!-- FIXME: Your website here       -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -62,22 +62,22 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/imagej/example-imagej2-command</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-imagej2-command</developerConnection>
+		<connection>scm:git:https://github.com/Karivtan/imagej2omerotest</connection>
+		<developerConnection>scm:git@github.com:Karivtan/imagej2omerotest.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/example-imagej2-command</url>
+		<url>https://github.com/Karivtan/imagej2omerotest</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/example-imagej2-command/issues</url>
+		<url>https://github.com/Karivtan/imagej2omerotest/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>com.mycompany.imagej.GaussFiltering</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<package-name>LeidenUniv.OmeroTest</package-name>                   <!-- FIXME: Your project package prefix here -->
+		<main-class>LeidenUniv.OmeroTest.OmeroTests</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
 		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
 		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
@@ -94,42 +94,6 @@
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
 		</dependency>
-		
-		<dependency>
-    		<groupId>ome</groupId>
-    		<artifactId>bioformats_package</artifactId>
-    		<version>6.5.1</version> 
-		</dependency>
-		
-		<dependency>
-    		<groupId>sc.fiji</groupId>
-    		<artifactId>fiji-lib</artifactId>
-		</dependency>
 
-		<dependency>
-    		<groupId>ome</groupId>
-    		<artifactId>scifio</artifactId>
-    		<version>5.0.0-rc2</version>
-		</dependency>
-	
-		<dependency>
-  			<groupId>io.scif</groupId>
-  			<artifactId>scifio</artifactId>
-		</dependency>
-		
-  		<dependency>
-  			<groupId>io.scif</groupId>
-  			<artifactId>scifio-bf-compat</artifactId>
-		</dependency>
-
-		<dependency>
-  			<groupId>ome</groupId>
-  			<artifactId>formats-bsd</artifactId>
-		</dependency>
-
-		<dependency>
-  			<groupId>ome</groupId>
-  			<artifactId>formats-gpl</artifactId>
-		</dependency>
 	</dependencies>
 </project>
