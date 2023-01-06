@@ -8,6 +8,8 @@
 
 package LeidenUniv.OmeroTest;
 
+import net.imagej.Dataset;
+import net.imagej.ImageJ;
 import net.imglib2.type.numeric.RealType;
 import omero.gateway.model.ImageData;
 import org.scijava.command.Command;
@@ -15,6 +17,7 @@ import org.scijava.plugin.Plugin;
 import LeidenUniv.Omero.Open_Omero_Dataset; //needed for the first part. do not remove
 import LeidenUniv.Omero.getOmeroDatasetAndAttachData;
 import ij.IJ;
+import ij.ImagePlus;
 import ij.measure.ResultsTable;
 import java.io.File;
 import java.io.IOException;
@@ -29,8 +32,8 @@ import java.util.Iterator;
 public class OmeroTests<T extends RealType<T>> implements Command {
     @Override
     public void run() {
-    	// The part below is used for opening all images in a dataset, this only works directly from FIJI so you need to compile and add the plugin to the plugins folder
-    	/* 
+    	// The part below is used for opening all images in a dataset
+    	/*
     	Open_Omero_Dataset ood = new Open_Omero_Dataset();
     	ood.run("");
     	*/
@@ -41,14 +44,25 @@ public class OmeroTests<T extends RealType<T>> implements Command {
     	Collection<ImageData> images = godaad.getImageCollection();// we now have a collection of images we can run through
     	if (images!=null){// if there are images
     		int counter=0;
-    		Iterator<ImageData> image = images.iterator(); // create an iterator to go through images 
+    		Iterator<ImageData> image = images.iterator(); // create an iterator to go through images
     		while (image.hasNext()) {// run through all the images
     			counter++;
     			ImageData data = image.next(); // gets the current image
     			IJ.log("Loading image "+counter+" of "+images.size()); // provides progress feedback for users
-
     			try {
-                	//ImagePlus timp = godaad.openImagePlus(data.getId(), data.getGroupId()); // loads the image if needed
+    				// Opening as Imageplus
+//                	ImagePlus timp = godaad.openImagePlus(data.getId(), data.getGroupId()); // loads the image if needed
+//                	timp.show();
+                	
+                	//Opening as Imgplus, this should work but gives an omerolocation error, this was previously resolved by referring back to scifio 0.37.3 but that no longer works 
+                	/*ImageJ ij = new ImageJ();
+                	ij.ui().showUI();
+                	Dataset d = godaad.openDataset(data.getId(),ij);
+                	ij.ui().show(d);*/
+    				
+    				// thus now the only solution is to use a wrapper:
+    				// for example https://javadoc.scijava.org/ImgLib2/net/imglib2/img/ImagePlusAdapter.html
+                	
 	                ResultsTable rt2 = new ResultsTable(); // create a result table with some data
 	                rt2.incrementCounter();
 	                rt2.addValue("Test string", "test 1");
