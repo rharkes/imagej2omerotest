@@ -12,16 +12,16 @@
 		<relativePath />
 	</parent>
 
-	<groupId>LeidenUniv.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
-	<artifactId>Imagej2omerotest</artifactId> <!-- FIXME: Your project artifactId here   -->
-	<version>0.0.1</version>
-	<name>Imagej2 OMerotest</name>  
-	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
-	<url>https://github.com/Karivtan/imagej2omerotest</url>                   <!-- FIXME: Your project website here       -->
-	<inceptionYear>2020</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
+	<groupId>NKI.OmeroTest</groupId>        <!-- FIXME: Your organization groupId here -->
+	<artifactId>Imagej2omerotest_RH</artifactId> <!-- FIXME: Your project artifactId here   -->
+	<version>0.0.2</version>
+	<name>Imagej2 OMerotest RH</name>  
+	<description>A Maven project implementing an ImageJ command by Rolf Harkes.</description> <!-- FIXME: Your project description here   -->
+	<url>https://github.com/rharkes/imagej2omerotest</url>                   <!-- FIXME: Your project website here       -->
+	<inceptionYear>2023</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>Leiden University</name>           <!-- FIXME: Your organization name here    -->
-		<url>https://www.universiteitleiden.nl/</url> <!-- FIXME: Your organization website here -->
+		<name>Netherlands Cancer Institute</name>           <!-- FIXME: Your organization name here    -->
+		<url>https://www.nki.nl/</url> <!-- FIXME: Your organization website here -->
 	</organization>
 	<licenses>
 		<license>                         <!-- FIXME: Your license here -->
@@ -34,9 +34,9 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>karivtan</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Joost Willemse</name>                            <!-- FIXME: Your name here          -->
-			<url>https://github.com/Karivtan/imagej2omerotest</url> <!-- FIXME: Your website here       -->
+			<id>rharkes</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Rolf Harkes</name>                            <!-- FIXME: Your name here          -->
+			<url>https://github.com/rharkes/imagej2omerotest</url> <!-- FIXME: Your website here       -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -62,24 +62,24 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/Karivtan/imagej2omerotest</connection>
-		<developerConnection>scm:git@github.com:Karivtan/imagej2omerotest.git</developerConnection>
+		<connection>scm:git:https://github.com/rharkes/imagej2omerotest</connection>
+		<developerConnection>scm:git@github.com:rharkes/imagej2omerotest.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/Karivtan/imagej2omerotest</url>
+		<url>https://github.com/rharkes/imagej2omerotest</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/Karivtan/imagej2omerotest/issues</url>
+		<url>https://github.com/rharkes/imagej2omerotest/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>LeidenUniv.OmeroTest</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>LeidenUniv.OmeroTest.OmeroTests</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<package-name>NKI.OmeroTest</package-name>                   <!-- FIXME: Your project package prefix here -->
+		<main-class>NKI.OmeroTest.OmeroTests</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
 		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
+		<license.copyrightOwners>NKI</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
 
 	<repositories>
